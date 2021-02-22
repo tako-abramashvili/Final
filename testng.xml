@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation Suite" verbose="1" thread-count="8" parallel="tests">
+    <test name="Test1" parallel="tests">
+        <classes>
+            <class name="Amazon.ChangeLanguageTest"/>
+        </classes>
+    </test>
+
+</suite>
