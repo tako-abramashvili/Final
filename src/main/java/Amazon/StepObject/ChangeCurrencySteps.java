@@ -9,15 +9,7 @@ import org.junit.jupiter.api.Assertions;
 import org.testng.asserts.Assertion;
 
 public class ChangeCurrencySteps extends ChangeCurrency {
-    {
-        Configuration.browser = "chrome";
-        Configuration.baseUrl = "https://www.amazon.com";
-        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
-        Configuration.startMaximized = true;
 
-        Selenide.open("https://www.amazon.com");
-
-    }
     @Step("hover on flag to change currency")
     public ChangeCurrencySteps hoverFlag() {
         flagIcon.hover();

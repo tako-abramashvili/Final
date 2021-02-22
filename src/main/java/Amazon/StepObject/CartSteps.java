@@ -8,13 +8,6 @@ import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 
 public class CartSteps extends Cart {
-    { Configuration.browser = "chrome";
-        Configuration.baseUrl = "https://www.amazon.com";
-        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
-        Configuration.startMaximized = true;
-
-        Selenide.open("https://www.amazon.com"); }
-
 
     @Step("open cart screen")
     public CartSteps openCart() {

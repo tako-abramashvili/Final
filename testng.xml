@@ -1,9 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Automation Suite" verbose="1" thread-count="8" parallel="tests">
-    <test name="Test1" parallel="tests">
+    <test name="Suit1" parallel="tests">
         <classes>
             <class name="Amazon.ChangeLanguageTest"/>
+        </classes>
+    </test>
+    <test name="Suit2" parallel="tests">
+        <classes>
+            <class name="Amazon.ChangeCurrencyTest"/>
+        </classes>
+    </test>
+    <test name="Suit3" parallel="tests">
+        <classes>
+            <class name="Amazon.CovidTest"/>
         </classes>
     </test>
 

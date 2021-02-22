@@ -10,15 +10,6 @@ import org.junit.jupiter.api.Assertions;
 
 
 public class ChangeLanguageSteps extends ChangeLanguage {
-    public static void SetUp() {
-        Configuration.browser = "chrome";
-        Configuration.baseUrl = "https://www.amazon.com";
-        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
-        Configuration.startMaximized = true;
-
-        Selenide.open("https://www.amazon.com");
-
-    }
 
     @Step("click on the flag to change language")
     public ChangeLanguageSteps HomeScreen() {
